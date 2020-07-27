@@ -4,7 +4,7 @@ function setVerified() {
 	expiration_date.setFullYear(expiration_date.getFullYear() + 1);
 	age_verify = "age_verification=true; expires=" + expiration_date.toUTCString(); + " path=/;"
 	document.cookie = age_verify;
-	document.location.href = "index.html";
+	document.location.href = "index";
 	
 }
 
@@ -31,6 +31,6 @@ function checkVerified() {
     var myCookie = getCookie("age_verification");
 
     if (myCookie == null) {
-        document.location.href = "age_verify.html";
+        document.location.href = "age_verify";
     }
 }
