@@ -1,0 +1,31 @@
+html {
+	background-image: url("https://drive.google.com/uc?export=view&id=1u_UL400iXp5Wmh8Eo0PHRn9w_13ylFlR");
+	background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mobileHide { display: inline;}
+   /* Smartphone Portrait and Landscape */
+   @media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 480px){ .mobileHide { display: none;}}
