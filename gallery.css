@@ -51,8 +51,17 @@
   text-align: center;
 }
 .img_nav img {
-  padding-right: 5vw;
-  padding-left: 5vw;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.gallery li img {
+  width: 11vw;
+  border-style: double;
+  border-color: black;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: 1vh;
 }
