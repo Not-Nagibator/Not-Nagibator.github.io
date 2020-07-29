@@ -70,8 +70,11 @@ nav {
 
 nav img {
   height: 3vh;
-  margin-bottom: 3vh;
 
+}
+
+nav a {
+  margin-bottom: 3vh;
 }
 
 nav ul {
@@ -94,7 +97,9 @@ ul {
 @media only screen and (orientation: portrait) {
   nav img {
   height: 1vh;
-  margin-bottom: 2vh;
+  }
+  nav a {
+    margin-bottom: 2vh;
   }
   .logo {
     height: 5vh
