@@ -73,7 +73,7 @@ nav img {
 
 }
 
-nav a {
+nav li {
   margin-bottom: 3vh;
 }
 
@@ -98,7 +98,7 @@ ul {
   nav img {
   height: 1vh;
   }
-  nav a {
+  nav li {
     margin-bottom: 2vh;
   }
   .logo {
