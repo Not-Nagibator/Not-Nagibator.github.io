@@ -70,7 +70,7 @@ nav {
 
 nav img {
   height: 3vh;
-  padding-bottom: 3vh;
+  margin-bottom: 3vh;
 
 }
 
@@ -94,7 +94,7 @@ ul {
 @media only screen and (orientation: portrait) {
   nav img {
   height: 1vh;
-  padding-bottom: 2vh;
+  margin-bottom: 2vh;
   }
   .logo {
     height: 5vh
