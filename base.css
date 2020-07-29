@@ -96,7 +96,7 @@ ul {
 
 @media only screen and (orientation: portrait) {
   nav img {
-  height: 1vh;
+    height: 1vh;
   }
   nav li {
     margin-bottom: 2vh;
