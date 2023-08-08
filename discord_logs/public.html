@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127193300-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127193300-2');
+</script>
+<style>
+
+  h1 {
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  th {
+    cursor: pointer;
+  }
+
+  td.detailsColumn {
+    padding-inline-start: 2em;
+    text-align: end;
+    white-space: nowrap;
+  }
+
+  a.icon {
+    padding-inline-start: 1.5em;
+    text-decoration: none;
+    user-select: auto;
+  }
+
+  a.icon:hover {
+    text-decoration: underline;
+  }
+
+  a.file {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAABEElEQVR42nRRx3HDMBC846AHZ7sP54BmWAyrsP588qnwlhqw/k4v5ZwWxM1hzmGRgV1cYqrRarXoH2w2m6qqiqKIR6cPtzc3xMSML2Te7XZZlnW7Pe/91/dX47WRBHuA9oyGmRknzGDjab1ePzw8bLfb6WRalmW4ip9FDVpYSWZgOp12Oh3nXJ7nxoJSGEciteP9y+fH52q1euv38WosqA6T2gGOT44vry7BEQtJkMAMMpa6JagAMcUfWYa4hkkzAc7fFlSjwqCoOUYAF5RjHZPVCFBOtSBGfgUDji3c3jpibeEMQhIMh8NwshqyRsBJgvF4jMs/YlVR5KhgNpuBLzk0OcUiR3CMhcPaOzsZiAAA/AjmaB3WZIkAAAAASUVORK5CYII=") left top no-repeat;
+  }
+
+  a.dir {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABt0lEQVR42oxStZoWQRCs2cXdHTLcHZ6EjAwnQWIkJyQlRt4Cd3d3d1n5d7q7ju1zv/q+mh6taQsk8fn29kPDRo87SDMQcNAUJgIQkBjdAoRKdXjm2mOH0AqS+PlkP8sfp0h93iu/PDji9s2FzSSJVg5ykZqWgfGRr9rAAAQiDFoB1OfyESZEB7iAI0lHwLREQBcQQKqo8p+gNUCguwCNAAUQAcFOb0NNGjT+BbUC2YsHZpWLhC6/m0chqIoM1LKbQIIBwlTQE1xAo9QDGDPYf6rkTpPc92gCUYVJAZjhyZltJ95f3zuvLYRGWWCUNkDL2333McBh4kaLlxg+aTmyL7c2xTjkN4Bt7oE3DBP/3SRz65R/bkmBRPGzcRNHYuzMjaj+fdnaFoJUEdTSXfaHbe7XNnMPyqryPcmfY+zURaAB7SHk9cXSH4fQ5rojgCAVIuqCNWgRhLYLhJB4k3iZfIPtnQiCpjAzeBIRXMA6emAqoEbQSoDdGxFUrxS1AYcpaNbBgyQBGJEOnYOeENKR/iAd1npusI4C75/c3539+nbUjOgZV5CkAU27df40lH+agUdIuA/EAgDmZnwZlhDc0wAAAABJRU5ErkJggg==") left top no-repeat;
+  }
+
+  a.up {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42myTA+w1RxRHz+zftmrbdlTbtq04qRGrCmvbDWp9tq3a7tPcub8mj9XZ3eHOGQdJAHw77/LbZuvnWy+c/CIAd+91CMf3bo+bgcBiBAGIZKXb19/zodsAkFT+3px+ssYfyHTQW5tr05dCOf3xN49KaVX9+2zy1dX4XMk+5JflN5MBPL30oVsvnvEyp+18Nt3ZAErQMSFOfelCFvw0HcUloDayljZkX+MmamTAMTe+d+ltZ+1wEaRAX/MAnkJdcujzZyErIiVSzCEvIiq4O83AG7LAkwsfIgAnbncag82jfPPdd9RQyhPkpNJvKJWQBKlYFmQA315n4YPNjwMAZYy0TgAweedLmLzTJSTLIxkWDaVCVfAbbiKjytgmm+EGpMBYW0WwwbZ7lL8anox/UxekaOW544HO0ANAshxuORT/RG5YSrjlwZ3lM955tlQqbtVMlWIhjwzkAVFB8Q9EAAA3AFJ+DR3DO/Pnd3NPi7H117rAzWjpEs8vfIqsGZpaweOfEAAFJKuM0v6kf2iC5pZ9+fmLSZfWBVaKfLLNOXj6lYY0V2lfyVCIsVzmcRV9Y0fx02eTaEwhl2PDrXcjFdYRAohQmS8QEFLCLKGYA0AeEakhCCFDXqxsE0AQACgAQp5w96o0lAXuNASeDKWIvADiHwigfBINpWKtAXJvCEKWgSJNbRvxf4SmrnKDpvZavePu1K/zu/due1X/6Nj90MBd/J2Cic7WjBp/jUdIuA8AUtd65M+PzXIAAAAASUVORK5CYII=") left top no-repeat;
+  }
+
+  html[dir=rtl] a {
+    background-position-x: right;
+  }
+
+  #parentDirLinkBox {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+</style>
+<title>Nagibator : Discord Logs</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../base.css">
+<link rel="icon" href="ui/favicon.png" sizes="100x100" type="image/png">
+<script src="age_verify.js"></script>
+</head>
+<div class="row">
+  <div class="column" style="position: absolute; top: 0px; width: 95%">
+      <!-- <body onload="checkVerified()"> -->
+      <body>
+<h1 id="header">Index of discord_logs\patrons</h1>
+
+<div id="parentDirLinkBox" style="display: block;">
+  <a id="parentDirLink" class="icon up" href="../discord_logs.html">
+    <span id="parentDirText">[parent directory]</span>
+  </a>
+</div>
+
+<table style="margin-left: auto; margin-right: auto;">
+  <thead>
+    <tr class="header" id="theader">
+      <th id="nameColumnHeader" tabindex="0" role="button">Name</th>
+      <th id="sizeColumnHeader" class="detailsColumn" tabindex="0" role="button">
+        Size
+      </th>
+      <th id="dateColumnHeader" class="detailsColumn" tabindex="0" role="button">
+        Date Modified
+      </th>
+    </tr>
+  </thead>
+<tbody id="tbody">
+  <tr><td data-value="art-appreciation.html" style="text-align: left;"><a class="icon file" draggable="true" href="public/art-appreciation.html">#art-appreciation</a></td><td class="detailsColumn" data-value="1965847">1.9 MB</td><td class="detailsColumn" data-value="1691373660">8/6/23, 10:01:00 PM</td></tr>
+  <tr><td data-value="bug-reports.html" style="text-align: left;"><a class="icon file" draggable="true" href="public/bug-reports.html">#bug-reports</a></td><td class="detailsColumn" data-value="47902">46.8 kB</td><td class="detailsColumn" data-value="1691373683">8/6/23, 10:01:23 PM</td></tr>
+  <tr><td data-value="general.html" style="text-align: left;"><a class="icon file" draggable="true" href="public/general.html">#general</a></td><td class="detailsColumn" data-value="5173030">4.9 MB</td><td class="detailsColumn" data-value="1691372643">8/6/23, 9:44:03 PM</td></tr>
+  <tr><td data-value="memes.html" style="text-align: left;"><a class="icon file" draggable="true" href="public/memes.html">#memes</a></td><td class="detailsColumn" data-value="1219339">1.2 MB</td><td class="detailsColumn" data-value="1691373418">8/6/23, 9:56:58 PM</td></tr>
+  <tr><td data-value="music.html" style="text-align: left;"><a class="icon file" draggable="true" href="public/music.html">#music</a></td><td class="detailsColumn" data-value="222786">218 kB</td><td class="detailsColumn" data-value="1691373439">8/6/23, 9:57:19 PM</td></tr>
+  <tr><td data-value="progress.html" style="text-align: left;"><a class="icon file" draggable="true" href="public/progress.html">#progress</a></td><td class="detailsColumn" data-value="23396">22.8 kB</td><td class="detailsColumn" data-value="1691373695">8/6/23, 10:01:35 PM</td></tr>
+  <tr><td data-value="suggestions.html" style="text-align: left;"><a class="icon file" draggable="true" href="public/suggestions.html">#suggestions</a></td><td class="detailsColumn" data-value="383883">375 kB</td><td class="detailsColumn" data-value="1691373386">8/6/23, 9:56:26 PM</td></tr>
+  <tr><td data-value="updates.html" style="text-align: left;"><a class="icon file" draggable="true" href="public/updates.html">#updates</a></td><td class="detailsColumn" data-value="36047">35.2 kB</td><td class="detailsColumn" data-value="1691373712">8/6/23, 10:01:52 PM</td></tr>
+  <tr><td data-value="your-own-art.html" style="text-align: left;"><a class="icon file" draggable="true" href="public/your-own-art.html">#your-own-art</a></td><td class="detailsColumn" data-value="4476130">4.3 MB</td><td class="detailsColumn" data-value="1691373560">8/6/23, 9:59:20 PM</td></tr>
+</tbody>
+</table>
+      </body>
+      <footer><div>© 2020<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> Nagibator. All Rights Reserved.</div></footer>
+  </div>
+</div>
+</html>
+
+
+</body></html>
